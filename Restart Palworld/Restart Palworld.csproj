@@ -6,6 +6,7 @@
     <RootNamespace>Restart_Palworld</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>RestartPalworld</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
