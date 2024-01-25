@@ -8,7 +8,7 @@ namespace Restart_Palworld;
 
 internal class Program
 {
-    private static void Main()
+    private static async Task Main()
     {
         string currentPath = AppDomain.CurrentDomain.BaseDirectory;
         string file = Path.Combine(currentPath, "settings.json");
@@ -35,6 +35,8 @@ internal class Program
         };
         timer.Elapsed += (sender, args) => Restart();
         timer.Start();
+
+        await Task.Delay(-1);
     }
 
     private static void Restart()
